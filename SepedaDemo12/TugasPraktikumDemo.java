@@ -1,4 +1,4 @@
-public class TugasPraktikum {
+public class TugasPraktikumDemo {
     public static void main(String[] args) {
         
         // instansiasi laptop
