@@ -4,6 +4,7 @@ package jobsheet3.motorEncapsulation;
 
         private int kecepatan = 0;
         private boolean kontakOn = false;
+        private final int max_kecepatan=100;
         
         public void nyalakanMesin() {
             kontakOn=true;
@@ -14,7 +15,12 @@ package jobsheet3.motorEncapsulation;
         }
         public void tambahKecepatan() {
             if (kontakOn == true) {
-                kecepatan += 5;
+                if (kecepatan + 10 <= max_kecepatan) {
+                    kecepatan += 10;
+                } else {
+                    kecepatan=max_kecepatan;
+                    System.out.println("kecepatan sudah maksimal! (" + max_kecepatan + ")\n");
+                }
             } else {
                 System.out.println("kecepatan tidak bisa bertambah karena mesin off! \n");
             }
