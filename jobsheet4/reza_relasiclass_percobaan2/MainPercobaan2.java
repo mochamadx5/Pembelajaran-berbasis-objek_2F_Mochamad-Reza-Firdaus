@@ -23,6 +23,7 @@ public class MainPercobaan2 {
         System.out.println("Biaya Sewa Mobil per hari: " + m.getBiaya());
         System.out.println("Biaya Sopir per hari: " + s.getBiaya());
         
-        System.out.println("Biaya Total = " + p.hitungBiayaTotal());     
+        System.out.println("Biaya Total = " + p.hitungBiayaTotal());  
+        System.out.println(p.getMobil().getMerk());   
     }
 }
